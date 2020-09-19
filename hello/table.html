@@ -1,49 +1,317 @@
-<!DOCTYPE html>
-<html>
+<! DOCTYPE HTML>
+<html lang="en">
 <head>
-<title>
-table
-</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<title>Registration Form</title>
 </head>
 <body>
-<h1 align="center">PERSONAL INFORMATION</h1>
-<section id="table1">
+<header id="head">
+<h2 align="center">NATIONAL INSTITUTE OF TECHNOLOGY PATNA</h2>
+<h5 align="center">Patna,India</h5>
+<hr/>
+</header>
+<form id="form1">
+<div id="per_details">
+<h3 class="header">Personal Details</h3>
 <table>
 <tr>
-<th>Name: </th>
-<td>ALOK KUMAR</td>
+<th>Form Number </th>
+<td><input type="text" name="formNO" id="formNO"></td>
 </tr>
 <tr>
-<th>Roll: </th>
-<td>1906186</td>
+<th>Name </th>
+<td><input type="text" name="name" required></td>
 </tr>
 <tr>
-<th>Course: </th>
-<td>CSL3403</td>
+<th>Roll Number </th>
+<td><input type="number" name="roll" required></td>
+</tr>
+<tr>
+<th>Gender </th>
+<td><input type="radio" name="gender" value="Male" required>Male
+<input type="radio" name="gender" value="Female" required>Female
+<input type="radio" name="gender" value="Other" required>Other</td>
+</tr>
+<tr>
+<th>Date of Birth </th>
+<td><input type="date" name="dob" placeholder="dd-mm-yyyy" required></td>
+</tr>
+<tr>
+<th>PWD </th>
+<td><input type="radio" name="pwd" value="yes" required />Yes
+<input type="radio" name="pwd" value="no" / required>No
+</td>
+</tr>
+<tr>
+<th>Category </th>
+<td><select name="category" required>
+<option value="">Select Category</option>
+<option value="general">General</option>
+<option value="obc">OBC</option>
+<option value="sc">SC</option>
+<option value="st">ST</option>
+</td>
+</tr>
+<tr>
+<th>Address </th>
+<td>
+<textarea style=" width:500px height:200px " required>
+</textarea>
+</td>
+</tr>
+<tr>
+<th>Pin Code </th>
+<td><input type="number" name="pin" min="100000" max="1000000" required></td>
+</tr>
+<tr>
+<th>Mobile </th>
+<td><input type="number" name="mobile" min="6000000000" max="9999999999" required></td>
+</tr>
+<tr>
+<th>Alternate Mobile </th>
+<td><input type="number" name="alt_mobile" min="6000000000" max="9999999999"></td>
 </tr>
 </table>
-</section>
+</div>
+<div id="aca_details">
+<h3 class="header">Adademic Details</h3>
+<table>
+<tr>
+<th>Highest Adademic Qualification </th>
+<td><select name="haq" required>
+<option value="">Select</option>
+<option value="10">10th</option>
+<option value="12">12th</option>
+<option value="grad">Graduation</option>
+</td>
+</tr>
+<tr>
+<th>Course </th>
+<td><select name="course" required>
+<option value="">Select</option>
+<option value="btech">B.Tech</option>
+<option value="barch">B.Arch</option>
+<option value="be">BE</option>
+<option value="imsc">IM.Sc</option>
+<option value="mtech">M.Tech</option>
+<option value="march">M.Arch</option>
+</td>
+</tr>
+<tr>
+<th>Branch </th>
+<td><select name="branch" required>
+<option value="">Select</option>
+<option value="me">ME</option>
+<option value="ce">CE</option>
+<option value="ee">EE</option>
+<option value="ece">ECE</option>
+<option value="cse">CSE</option>
+</td>
+</tr>
+<tr>
+<th>Semester </th>
+<td><input type="number" name="sem" value="" min="1" max="8" required>
+</td>
+</tr>
+<tr>
+<th>CRL </th>
+<td><input type="number" name="crl" value=""required>
+</td>
+</tr>
+<tr>
+<th>Category Rank </th>
+<td><input type="number" name="catrank" value="" required>
+</td>
+</tr>
+<tr>
+<th>CGPA </th>
+<td><input type="number" name="cgpa" value="" min="1" max="10" required>
+</td>
+</tr>
+<tr>
+<th>Backlog </th>
+<td><input type="radio" name="backlog" value="yes" >Yes
+<input type="radio" name="backlog" value="no">No
+</td>
+</tr>
+<tr>
+<th>Hostel Aaccomodation </th>
+<td><input type="radio" name="hostel" value="yes" >Yes
+<input type="radio" name="hostel" value="no">No
+</td>
+</tr>
+<tr>
+<th>Hostel Name </th>
+<td><input type="text" name="hosname" value="" >
+</td>
+</tr>
+<tr>
+<th>Hostel Room No. </th>
+<td><input type="text" name="hosroom" value="" >
+</td>
+</tr>
+</table>
+</div>
+<div id="bank_details">
+<h3 id="hd1">Bank Details For Refunding Process
+</h3>
+<table>
+<tr>
+<th>Account Holder Name </th>
+<td><input type="text" name="acctholdername" value="" required>
+</td>
+</tr>
+<tr>
+<th>Bank Account No. </th>
+<td><input type="number" name="acctno" value="" required>
+</td>
+</tr>
+<tr>
+<th>Re-confirm Bank Account No. </th>
+<td><input type="number" name="reacctno" value="" required>
+</td>
+</tr>
+<tr>
+<th>IFSC Code </th>
+<td><input type="text" name="ifsc" value="" required>
+</td>
+</tr>
+<tr>
+<th>Bank Name </th>
+<td><input type="text" name="bankname" value="" required>
+</td>
+</tr>
+<tr>
+<th>Bank Branch </th>
+<td><input type="text" name="bankbranch" value="" required>
+</td>
+</tr>
+</table>
+</div>
+<div id="sub">
+<button type="submit" value="Submit" form="form1">Submit</button>
+</div>
+</form>
+<footer>
+<p>All Rights Reserved.</p>
+</footer>
 </body>
 <style>
-h1{
- color: red ;
- text-decoration: underline wavy blue ;
+
+#per_details{
+ margin-left: 40px ;
+ margin-right: 80px;
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+ border : 3px solid black ;
+ border-radius: 20px ;
 }
-#table1{
- text-align: center ;
-}
-table{
- border: 3px solid black ;
- align: center ;
+
+.header{
  margin-left: 400px ;
- }
- tr,th,td{
-  border: 3px solid black ;
- }
- th{
-  color: lime ;
-  text-decoration: underline ;
-  font-family: Verdana ;
- }
+ margin-right: 400px ;
+ text-align: center;
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+ border-radius: 5px ;
+ background-color: lightblue ;
+ line-height: 3em ;
+ text-decoration: underline ;
+}
+
+#aca_details{
+ margin-left: 40px ;
+ margin-right: 80px;
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+ border : 3px solid black ;
+ border-radius: 20px ;
+}
+
+#bank_details{
+ margin-left: 40px ;
+ margin-right: 80px;
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+ border : 3px solid black ;
+ border-radius: 20px ;
+}
+
+#hd1{
+ margin-left: 300px ;
+ margin-right: 300px ;
+ text-align: center;
+ margin-top: 20px ;
+ margin-bottom: 20px ;
+ border-radius: 5px ;
+ background-color: lightblue ;
+ line-height: 3em ;
+ text-decoration: underline ;
+}
+
+tr{
+ margin-left: 25px ;
+ margin-bottom: 20px ;
+ margin-top: 20px ;
+ margin-right: 10p ;
+}
+
+th{
+ margin-right: 50px ;
+ margin-top: 15px ;
+ margin-bottom: 15px ;
+}
+
+#head{
+ line-height: 0.2em ;
+ margin-top: 40px ;
+ margin-bottom: 30px ;
+}
+
+td{
+ margin-left: 60px ;
+ margin-top: 15px ;
+ margin-bottom: 15px ;
+}
+
+footer{
+ margin: 100px 50px 30px 10px ;
+ background-color: lightgreen ;
+ text-decoration: underline ;
+ line-height: 4em ;
+}
+
+input{
+ background-color: cyan ;
+ border-radius: 5px ;
+}
+
+table{
+ margin-top: 30px ;
+ margin-bottom: 30px ;
+}
+
+select{
+ background-color: cyan ;
+ border-radius: 5px
+}
+
+textarea{
+ background-color: cyan ;
+ border-radius: 5px
+}
+
+#sub{
+ text-align: right ;
+ margin-right: 140px ;
+ font-weight: bold ;
+}
+
+button{
+ background-color: lime;
+}
+
+
 </style>
 </html>
