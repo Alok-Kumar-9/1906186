@@ -23,12 +23,14 @@ img{
 .container{
  display: flex ;
  flex-wrap: wrap ;
- transition: all ;
- transition-duration: 5s ;
+ transition: all 5s ;
+ /*transition-duration: 5s ;*/
  transition-timing-function: ease-in ;
+ justify-content: center ; 
  }
 img:hover{
- transform: scale(1,1);
+ /*transform: translate(50px, 100px) ;*/
+ transform: translate(50px, 100px) ;
  /*transform: rotateX(130deg);*/
  /*transform: rotateX(90deg);*/
  }
