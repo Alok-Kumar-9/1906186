@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsiveness
+    </title>
+</head>
+
+<body>
+    <h1 align="center">CARS</h1>
+    <div id="aura" style="background-color: yellow;">
+        <h1  align="center">FLEXBOX</h1>
+    </div>
+    <hr />
+    <div class="container">
+        <img src="https://imgur.com/f9BRghK.jpg" \>
+        <img src="https://imgur.com/K0RrM46.jpg" \>
+        <img src="https://imgur.com/KlhaRyG.jpg" \>
+        <img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            \>
+        <img src="https://images.pexels.com/photos/2631489/pexels-photo-2631489.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            \>
+        <img src="https://images.pexels.com/photos/4141962/pexels-photo-4141962.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            \>
+    </div>
+</body>
+<style>
+    img {
+        height: 300px;
+        width: 300px;
+        margin: 5px;
+        padding: 4px 2px 2px;
+    }
+
+    .container {
+        transition: all 5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 3s ;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-left: 450px ;
+        margin-right: 450px ;
+    }
+
+    img:hover {
+        transform: rotate(30deg);
+        width: 500px;
+        height: 500px;
+    }
+
+    #aura{
+        transition: font-size 2s ;
+    }
+
+    h1:hover {
+        color: blue;
+        font-size: 25px ;
+    }
+</style>
+
+<!--      -->
+
+</html>
